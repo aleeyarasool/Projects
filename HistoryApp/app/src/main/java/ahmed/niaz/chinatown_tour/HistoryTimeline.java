@@ -25,6 +25,11 @@ public class HistoryTimeline extends AppCompatActivity {
 
     int mCurrentPage;
 
+    public HistoryTimeline(Context context) {
+
+        this.context = context;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

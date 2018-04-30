@@ -17,6 +17,7 @@ public class TimelineSliderAdapter extends PagerAdapter {
     private LayoutInflater layoutInflater;
 
     public TimelineSliderAdapter(Context context) {
+
         this.context = context;
     }
 
@@ -37,20 +38,20 @@ public class TimelineSliderAdapter extends PagerAdapter {
             R.drawable.timeline1990s
     };
 
-    public String[] slide_headings = {
-            "1870s",
-            "1880s",
-            "1890s",
-            "1900s",
-            "1910s",
-            "1920s",
-            "1930s",
-            "1940s",
-            "1950s",
-            "1960s",
-            "1970s",
-            "1980s",
-            "1990s"
+    public int[] slide_headings = {
+            R.string.timeline1,
+            R.string.timeline2,
+            R.string.timeline3,
+            R.string.timeline4,
+            R.string.timeline5,
+            R.string.timeline6,
+            R.string.timeline7,
+            R.string.timeline8,
+            R.string.timeline9,
+            R.string.timeline10,
+            R.string.timeline11,
+            R.string.timeline12,
+            R.string.timeline13,
     };
 
     int[] slide_descriptions = new int[] {
@@ -96,7 +97,7 @@ public class TimelineSliderAdapter extends PagerAdapter {
 
         container.addView(view);
 
-        return view;   //send
+        return view;
     }
 
     @Override //stops
